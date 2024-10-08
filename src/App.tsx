@@ -1,7 +1,6 @@
 import { Navigate, Route, Routes } from 'react-router';
 import './App.css';
 import Home from './Home';
-import Navigation from './Navigation';
 import { HashRouter } from 'react-router-dom';
 import About from './About';
 import Create from './Create';
@@ -15,7 +14,7 @@ function App() {
   return (
     <HashRouter>
       <div className="App">
-        <div className="" style={{ height: 75 }}>
+        <div style={{ height: 75 }}>
           <SideBar />
         </div>
         <Routes>

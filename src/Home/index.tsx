@@ -1,5 +1,4 @@
 import Overview from "../About/overview";
-import SideBar from "./sidebar";
 
 /**
  * This is the home page of the website.

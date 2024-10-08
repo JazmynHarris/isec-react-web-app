@@ -37,7 +37,7 @@ export default function About() {
                 }
             </ul>
 
-            <div className="d-flex">
+            <div className="">
                 <Routes>
                     <Route path="/" element={<Overview />} />
                     <Route path="/overview" element={<Overview />} />
