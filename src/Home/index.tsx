@@ -1,10 +1,5 @@
-import About from "../About";
-import Create from "../Create";
-import Drawings from "../Drawings";
-import { Routes, Route, Navigate } from "react-router";
-import Profile from "../Profile";
-import Settings from "../Settings";
-import Navigation from "../Navigation";
+import Overview from "../About/overview";
+import SideBar from "./sidebar";
 
 /**
  * This is the home page of the website.
@@ -15,15 +10,13 @@ import Navigation from "../Navigation";
 export default function Home() {
     return (
         <div>
-            <h2>Home Page</h2>
-            <Navigation />
-            <Routes>
-                <Route path="About" element={ <About />} />
-                <Route path="Create" element={<Create/>} />
-                <Route path="Drawings" element={<Drawings />} />
-                <Route path="Profile" element={<Profile />} />
-                <Route path="Settings" element={<Settings />} />
-            </Routes>
+            <h1>Home Page</h1>
+            <div className="container">
+                <div id="overview-header" className=" d-flex justify-content-start">
+                    <Overview />
+                </div>
+            </div>
+            
         </div>
     );
 }

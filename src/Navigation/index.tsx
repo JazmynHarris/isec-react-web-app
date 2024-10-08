@@ -24,8 +24,8 @@ export default function Navigation() {
         <div id="isec-navigation">
             {links.map((link) => (
                 <div>
-                    <button className="btn btn-lg">
-                        <a href={`#/${link.path}`} className={`list-group-item border border-0`}>{link.label}</a>
+                    <button className="btn btn-lg btn-primary">
+                        <a href={`#/${link.path.toLowerCase()}`} className={`list-group-item border border-0`}>{link.label}</a>
                     </button>
                     
                 </div>
